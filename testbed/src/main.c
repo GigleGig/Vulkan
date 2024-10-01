@@ -1,6 +1,10 @@
 #include <core/logger.h>
 #include <core/asserts.h>
 
+// TODO: TEST
+#include <platform/platform.h>
+
+
 int main(void){
     KFATAL("A test message: %f",3.14f);
     KDEBUG("A test message: %f",3.14f);
@@ -9,7 +13,14 @@ int main(void){
     KWARN("A test message: %f",3.14f);
     KINFO("A test message: %f",3.14f);
 
-    KASSERT(1 == 0);
+
+    platform_state state;
+    if(platform_startup(&state, "TEST", 100, 100, 1280, 720)) {
+        while (TRUE) {
+            platform_pump_message(&state);
+        }
+    }
+    platform_shutdown(&state);
 
     return 0;
 }
