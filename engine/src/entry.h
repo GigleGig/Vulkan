@@ -1,3 +1,5 @@
+#pragma once
+
 #include "core/application.h"
 #include "core/logger.h"
 #include "game_types.h"
@@ -22,10 +24,8 @@ int main(void){
         KFATAL("The game's function pointers must be assigned");
         return -2;
     }
-
-
     
-
+    //Initialization
     if(!application_create(&game_inst)) {
         KINFO("Application failed to creat!");
         return 1;
@@ -37,14 +37,7 @@ int main(void){
         return 2;
     }
 
-    // Application configuration
-    application_config config;
-
-    config.start_pos_x = 100;
-    config.start_pos_y = 100;
-    config.start_width = 1280;
-    config.start_height = 720;
-    config.name = "Engine Tested";
+    
 
     return 0;
 }

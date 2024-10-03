@@ -1,6 +1,7 @@
 #include "application.h"
 #include "platform/platform.h"
 #include "logger.h"
+#include "game_types.h"
 
 typedef struct application_state {
     game* game_inst;
