@@ -1,6 +1,19 @@
 {
     "files.associations": {
         "iosfwd": "c",
-        "xlocbuf": "c"
+        "xlocbuf": "c",
+        "vector": "cpp",
+        "xstring": "cpp",
+        "array": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "xutility": "cpp",
+        "expected": "cpp",
+        "optional": "cpp",
+        "system_error": "cpp",
+        "type_traits": "cpp",
+        "xtr1common": "cpp",
+        "kmemory.h": "c",
+        "darray.h": "c"
     }
 }
