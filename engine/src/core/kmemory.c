@@ -94,12 +94,10 @@ char* get_memory_usage_str() {
         if(stats.tagged_allocated[i] >= gib) {
             unit[0] ='G';
             amount = stats.tagged_allocated[i] / (float)gib;
-        } else if (stats.tagged_allocated[i] >= mib)
-        {
+        } else if (stats.tagged_allocated[i] >= mib) {
             unit[0] ='M';
             amount = stats.tagged_allocated[i] / (float)mib;
-        } else if (stats.tagged_allocated[i] >= kib)
-        {
+        } else if (stats.tagged_allocated[i] >= kib) {
             unit[0] ='K';
             amount = stats.tagged_allocated[i] / (float)kib;
         } else {

@@ -5,22 +5,22 @@
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/bin/testbed.exe",
+            "program": "${workspaceFolder}/bin/testbed.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceRoot}",
+            "cwd": "${workspaceFolder}",
             "environment": [],
-            "console": "newExternalWindow"
+            "console": "newExternalWindow",
         },
         {
             "name": "(Linux) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/bin/testbed",
+            "program": "${workspaceFolder}/bin/testbed",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceRoot}/bin/",
-            "environment": []
+            "cwd": "${workspaceFolder}/bin/",
+            "environment": [],
         }
     ]
 }
