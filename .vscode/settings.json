@@ -14,6 +14,9 @@
         "type_traits": "cpp",
         "xtr1common": "cpp",
         "kmemory.h": "c",
-        "darray.h": "c"
+        "darray.h": "c",
+        "renderer_types.inl": "c",
+        "renderer_backend.h": "c",
+        "defines.h": "c"
     }
 }

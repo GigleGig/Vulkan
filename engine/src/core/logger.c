@@ -38,7 +38,7 @@ void log_output(log_level level, const char* message, ...){
 
     // Prevent overwirte the buffer, so we can avoid level_strings[level]+level_strings[level]+out_message
     char out_message2[32000];
-    sprintf(out_message2, "%s%s\n", level_strings[level],out_message);
+    sprintf(out_message2, "%s%s\n", level_strings[level], out_message);
 
     // Platform-specific output.
     if(is_error) {
